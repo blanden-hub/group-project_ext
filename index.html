@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GottheJokes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="tabs">
+        <ul>
+          <li ><button class='button m-2' onclick="loadDadJoke()">Click me for Dad Joke!!</button></li>
+          <li ><button class = "button m-2" onclick="loadChuckJoke()">Click me for Chuck Norris Joke!!</button></li>
+        </ul>
+      </div>  
+      <!-- <div class="joke">
+        <p id="joke-text">
+
+        </p>
+      </div> -->
+      <div class="modal" id="joke-modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <!-- <p id="joke-text">
+            
+            </p> -->
+            <div class="card" >
+                <div class="card-content">
+                  <div class="content" id="joke-text">
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
+        <button class="modal-close is-large" onclick="closeModal()"></button>
+      </div>
+      
+      
+      
+</body>
+</html>
