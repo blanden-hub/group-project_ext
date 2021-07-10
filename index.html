@@ -9,12 +9,26 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="tabs">
-        <ul>
-          <li ><button class='button m-2' onclick="loadDadJoke()">Click me for Dad Joke!!</button></li>
-          <li ><button class = "button m-2" onclick="loadChuckJoke()">Click me for Chuck Norris Joke!!</button></li>
-        </ul>
+    <section class="hero is-medium is-warning">
+        <div class="hero-body">
+          <p class="title">
+            Welcome to<br> <span class="is-warning is-large">GottheJokes!!</span>
+            
+          </p>
+          <p class="subtitle">
+            come for a laugh? Click the buttons below!
+          </p>
+        </div>
+      
+    
+        <div class="tabs ">
+         <ul class="is-warning">
+          <li ><button class='button m-2 is-info' onclick="loadDadJoke()">Click me for Dad Joke!!</button></li>
+          <li ><button class = "button m-2 is-success" onclick="loadChuckJoke()">Click me for Chuck Norris Joke!!</button></li>
+          <li ><button class = "button m-2 is-danger" onclick="">Click me to see your saved Jokes!!</button></li>
+            </ul>
       </div>  
+    </section>
       <!-- <div class="joke">
         <p id="joke-text">
 
@@ -32,10 +46,19 @@
                     
                   </div>
                 </div>
+                <button class= "button is-info" onclick="saveJoke()">Save Joke</button>
+                <button class= "button is-danger" onclick="closeModal()">Discard Joke</button>
               </div>
         </div>
-        <button class="modal-close is-large" onclick="closeModal()"></button>
+    
       </div>
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>GottheJokes</strong> by Bryce Sitler and Will Duncans
+          </p>
+        </div>
+      </footer>
       
       
       

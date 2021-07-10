@@ -1,6 +1,7 @@
 const jokeText = document.querySelector('#joke-text');
 const jokeModal = document.querySelector('#joke-modal');
-
+var jokeArr = [];
+var jokeData = {};
 
 function loadDadJoke() {
     jokeText.innerText = '';
@@ -30,7 +31,11 @@ function loadChuckJoke() {
             jokeText.innerText = data.value
         });
 }
-
+// saves joke to local storage
+var saveJoke = function () {
+    jokeArr.push(jokeData);
+    localStorage.setItem("jokeArr", JSON.stringify(jokeArr));
+}
 function closeModal() {
     jokeModal.classList.remove('is-active')   
 }
