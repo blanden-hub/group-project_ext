@@ -25,7 +25,7 @@
          <ul class="is-warning">
           <li ><button class='button m-2 is-info' onclick="loadDadJoke()">Click me for Dad Joke!!</button></li>
           <li ><button class = "button m-2 is-success" onclick="loadChuckJoke()">Click me for Chuck Norris Joke!!</button></li>
-          <li ><button class = "button m-2 is-danger" onclick="">Click me to see your saved Jokes!!</button></li>
+          
             </ul>
       </div>  
     </section>
@@ -42,15 +42,22 @@
             </p> -->
             <div class="card" >
                 <div class="card-content">
-                  <div class="content" id="joke-text">
-                    
+                  <div class="content" id="current-joke">
+                  
                   </div>
                 </div>
-                <button class= "button is-info" onclick="saveJoke()">Save Joke</button>
+                <button id="save-joke-button" class= "button is-info" onclick="saveJoke()">Save Joke</button>
                 <button class= "button is-danger" onclick="closeModal()">Discard Joke</button>
               </div>
         </div>
+
     
+      </div>
+      <div>
+          <h3>Your saved jokes</h3>
+          <div id="saved-jokes"></div>
+          
+
       </div>
       <footer class="footer">
         <div class="content has-text-centered">
