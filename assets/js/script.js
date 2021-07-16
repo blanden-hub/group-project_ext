@@ -71,7 +71,7 @@ var saveJoke = function () {
               ${j.joke}
               </div>
             </div>
-            <button  class= "button is-danger" onclick="deleteJoke('${j.id}')">Delete Joke</button>
+            <button  class= "button" onclick="deleteJoke('${j.id}')">🗑</button>
           </div>`
     )).join('')
    // const listItems = jokeArr.map(j => ("<li>"+ j.joke + "</li>")).join("")

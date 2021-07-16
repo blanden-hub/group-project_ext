@@ -1,75 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GottheJokes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <script src="script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 </head>
+
 <body>
-    <section class="hero is-medium is-warning">
+    <section class="hero is-success is-fullheight">
+        <div class="hero-head">
+            <div class="container has-text-centered">
+                <p class="title has-text-centered">
+                    Welcome to<br> <span class="is-warning is-large">GottheJokes!!</span>
+
+                </p>
+                <p class="subtitle has-text-centered">
+                    come for a laugh? Click the buttons below!
+                </p>
+            </div>
+        </div>
         <div class="hero-body">
-          <p class="title has-text-centered">
-            Welcome to<br> <span class="is-warning is-large">GottheJokes!!</span>
-            
-          </p>
-          <p class="subtitle has-text-centered">
-            come for a laugh? Click the buttons below!
-          </p>
-        </div>
-      
-    
-        <div class="tabs ">
-         <ul class="is-warning">
-          <li ><button class='button m-2 is-info' onclick="loadDadJoke()">Click me for Dad Joke!!</button></li>
-          <li ><button class = "button m-2 is-success" onclick="loadChuckJoke()">Click me for Chuck Norris Joke!!</button></li>
-          
-            </ul>
-      </div>  
-    </section>
-      <!-- <div class="joke">
-        <p id="joke-text">
+            <div class="tabs is-medium is-info ">
+                <ul class="is-warning">
+                    <li><button class='button m-2 is-warning' onclick="loadDadJoke()">Click me for Dad Joke!!</button>
+                    </li>
+                    <li><button class="button m-2 is-warning" onclick="loadChuckJoke()">Click me for Chuck Norris
+                            Joke!!</button></li>
 
-        </p>
-      </div> -->
-      <div class="modal" id="joke-modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <!-- <p id="joke-text">
-            
-            </p> -->
-            <div class="card" >
-                <div class="card-content">
-                  <div class="content" id="current-joke">
-                  
-                  </div>
+                </ul>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div>
+                <h3>Your saved jokes</h3>
+                <div id="saved-jokes">
+                    NOne.
                 </div>
-                <button id="save-joke-button" class= "button is-info" onclick="saveJoke()">Save Joke</button>
-                <button class= "button is-danger" onclick="closeModal()">Discard Joke</button>
-              </div>
+            </div>
         </div>
-
-    
-      </div>
-      <div>
-          <h3>Your saved jokes</h3>
-          <div id="saved-jokes">
-              NOne.
-          </div>
-          
-
-      </div>
-      <footer class="footer">
+    </section>
+    <footer class="footer">
         <div class="content has-text-centered">
-          <p>
-            <strong>GottheJokes</strong> by Bryce Sitler
-          </p>
+            <p>
+                <strong>GottheJokes</strong> by Bryce Sitler
+            </p>
         </div>
-      </footer>
-      
-      
-      
+    </footer>
+
+
+    <div class="modal" id="joke-modal">
+        <div class="modal-bakground"></div>
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-content">
+                    <div class="content" id="current-joke">
+
+                    </div>
+                </div>
+                <button id="save-joke-button" class="button is-warning" onclick="saveJoke()">💾</button>
+                <button class="button is-warning" onclick="closeModal()">🗑</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
