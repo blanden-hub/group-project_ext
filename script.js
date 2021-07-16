@@ -60,8 +60,10 @@ var saveJoke = function () {
 
 
 }
+
  var loadSavedJokes = function () {
     //openModal()
+    
     const cards = jokeArr.map(j => (
     `<div class="card">
             <div class="card-content">
