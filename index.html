@@ -15,7 +15,8 @@
         <div class="hero-head">
             <div class="container has-text-centered">
                 <p class="title has-text-centered">
-                    Welcome to<br> <span class="is-warning is-large">GottheJokes!!</span>
+                    Welcome to<br>
+                    <span">GottheJokes!!</span>
 
                 </p>
                 <p class="subtitle has-text-centered">
@@ -30,6 +31,7 @@
                     </li>
                     <li><button class="button m-2 is-warning" onclick="loadChuckJoke()">Click me for Chuck Norris
                             Joke!!</button></li>
+                    <!-- <li><button class="button m-2 is-warning" onclick="loadYoJoke()">Click me for Yo Mama Joke!!</button></li> -->
 
                 </ul>
             </div>
@@ -38,7 +40,7 @@
             <div>
                 <h3>Your saved jokes</h3>
                 <div id="saved-jokes">
-                    NOne.
+                    None.
                 </div>
             </div>
         </div>
@@ -51,9 +53,8 @@
         </div>
     </footer>
 
-
     <div class="modal" id="joke-modal">
-        <div class="modal-bakground"></div>
+        <div class="modal-background"></div>
         <div class="modal-content">
             <div class="card">
                 <div class="card-content">
@@ -61,11 +62,11 @@
 
                     </div>
                 </div>
-                <button id="save-joke-button" class="button is-warning" onclick="saveJoke()">💾</button>
-                <button class="button is-warning" onclick="closeModal()">🗑</button>
             </div>
+            <button id="save-joke-button" class="button is-warning" onclick="saveJoke()">💾</button>
+                <button class="button is-warning" onclick="closeModal()">🗑</button>
         </div>
-    </div>
+        
 </body>
 
 </html>
